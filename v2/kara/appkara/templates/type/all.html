@@ -1,0 +1,17 @@
+{% extends 'main_type.html' %}
+
+{% block title %}
+    TYPE
+{% endblock %}
+
+{% block content %}
+<h1> bienvenue dans les types </h1>
+    <a href="/appkara/saisi_type/"> AJOUTER UN TYPE DE TECHNIQUE </a>
+
+
+<ol>
+    {% for i in liste %}
+        <li>{{i}} <a href="/appkara/affiche_type/{{i.id}}/"> afficher </a></li>
+    {% endfor %}
+</ol>
+{% endblock %}

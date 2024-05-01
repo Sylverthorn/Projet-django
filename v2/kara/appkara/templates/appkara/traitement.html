@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    traitement {{technique.nom}}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{technique.nom}}</h1>
+    <h2>{{technique.type}}</h2>
+    <p>
+        {{technique.description}}
+    </p>
+    <li><a href="/appkara/update/{{technique.id}}/"> Modifier </a></li>
+    <li><a href="/appkara/delete/{{technique.id}}/"> Suprimer</a></li>
+{% endblock %}
